@@ -9,9 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.amjadalbnny.collshopchallenge.Interfaces.GetAvatarUrlCompletion;
 import com.amjadalbnny.collshopchallenge.Interfaces.GetUserCredentialsInterface;
-import com.amjadalbnny.collshopchallenge.Interfaces.GetUserProfileCompletion;
 import com.amjadalbnny.collshopchallenge.R;
 import com.amjadalbnny.collshopchallenge.managers.ServerCallsManager;
 import com.amjadalbnny.collshopchallenge.managers.SharedPreferencesManager;
@@ -45,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.sign_in_button)
-    void signInClicked(View view){
+    void signInClicked(){
 
         String email = emailEditText.getText().toString();
         String password = passwordEditText.getText().toString();

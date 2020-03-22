@@ -18,6 +18,7 @@ import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -77,6 +78,14 @@ public class ProfileActivity extends AppCompatActivity {
 
         emailTextView.setText(SharedPreferencesManager.getInstance().getEmail());
         passwordTextView.setText(SharedPreferencesManager.getInstance().getPassword());
+
+    }
+
+    @OnClick(R.id.sign_out_button)
+    void signOutClicked(){
+
+        SharedPreferencesManager.getInstance().clearAll();
+        onBackPressed();
 
     }
 

@@ -22,6 +22,14 @@ public class SharedPreferencesManager {
         this.context = context;
     }
 
+    public void clearAll(){
+        saveUserID("");
+        savePassword("");
+        saveEmail("");
+        saveToken("");
+        saveAvatarUrl("");
+    }
+
     public void saveUserID(String userID) {
 
         SharedPreferences sp = context.getSharedPreferences(USER_PROFILE, Context.MODE_PRIVATE);
