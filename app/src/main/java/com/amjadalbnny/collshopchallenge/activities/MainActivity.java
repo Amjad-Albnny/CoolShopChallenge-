@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.sign_in_button)
-    void signInClicked(){
+    void signInClicked( ){
 
         String email = emailEditText.getText().toString();
         String password = passwordEditText.getText().toString();
@@ -78,5 +77,6 @@ public class MainActivity extends AppCompatActivity {
     private void openProfileActivity(){
         Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
         startActivity(intent);
+        finish();
     }
 }
