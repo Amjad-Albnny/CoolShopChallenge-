@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Collshop Challenge</string>
+    <string name="app_name">CoolShop Challenge</string>
 
     <string name="update_profile_photo">Update Profile Photo</string>
     <string name="gallery">Gallery</string>
@@ -10,5 +10,12 @@
 
     <string name="sign_in">Sign In</string>
     <string name="sign_out">Sign Out</string>
+
+    <string name="enter_valid_email">Please enter valid email!</string>
+    <string name="enter_valid_password">Please enter valid password!</string>
+
+    <string name="add_filter">Add Filter</string>
+
+    <string name="please_check_internet_connection">Please check your internet connection then try again</string>
 
 </resources>

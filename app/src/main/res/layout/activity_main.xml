@@ -15,6 +15,11 @@
         android:layout_centerInParent="true"
         android:layout_marginRight="48dp"
         android:layout_marginLeft="48dp"
+        android:paddingTop="64dp"
+        android:paddingBottom="64dp"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:background="@drawable/rounded_light_gray_background"
         >
 
         <EditText
@@ -23,6 +28,8 @@
             android:layout_height="wrap_content"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_normal_border"
+            android:padding="8dp"
             />
 
         <EditText
@@ -32,15 +39,46 @@
             android:hint="@string/password"
             android:layout_marginTop="16dp"
             android:inputType="textPassword"
+            android:background="@drawable/edit_text_normal_border"
+            android:padding="8dp"
             />
 
-        <Button
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="24dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            />
+
+        <TextView
             android:id="@+id/sign_in_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="24dp"
             android:text="@string/sign_in"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_button_with_red_button"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="48dp"
+            android:paddingRight="48dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/warning_message_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#f00"
+            android:text="@string/please_check_internet_connection"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="invisible"
             />
 
     </LinearLayout>
